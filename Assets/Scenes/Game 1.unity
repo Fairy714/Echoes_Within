@@ -517,7 +517,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -24.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &101240866
@@ -532,8 +532,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a08d7956b577149855bdb941d97070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name_of_stat_to_retrieve: isFemale
-  type_of_stat_to_retrieve: 2
+  name_of_stat_to_retrieve: gender
+  type_of_stat_to_retrieve: 1
   message_before_stat: 
   message_after_stat: 
   display_nothing_if_stat_not_present: 1
@@ -1226,7 +1226,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &921799735
 Transform:
   m_ObjectHideFlags: 0
@@ -1257,12 +1257,12 @@ MonoBehaviour:
   go_to_next_node: 1
   executed_from_load: 0
   print_all_stats_to_console: 1
-  stat_type: 2
-  stat_name: isFemale
+  stat_type: 4
+  stat_name: gender
   set_number_to: 0
   modify_number_amount: 0
   set_bool_to: 0
-  set_string_to: 
+  set_string_to: male
 --- !u!1 &932973902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,7 +2842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1663773804
 Transform:
   m_ObjectHideFlags: 0
@@ -2873,12 +2873,12 @@ MonoBehaviour:
   go_to_next_node: 1
   executed_from_load: 0
   print_all_stats_to_console: 1
-  stat_type: 2
-  stat_name: isFemale
+  stat_type: 4
+  stat_name: gender
   set_number_to: 0
   modify_number_amount: 0
   set_bool_to: 1
-  set_string_to: 
+  set_string_to: female
 --- !u!1 &1724819982
 GameObject:
   m_ObjectHideFlags: 0
@@ -4750,10 +4750,10 @@ MonoBehaviour:
   Button_Events:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 921799734}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 921799736}
+        m_TargetAssemblyTypeName: VNEngine.AlterStatNode, Assembly-CSharp
+        m_MethodName: Run_Node
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4776,10 +4776,10 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1663773803}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1663773805}
+        m_TargetAssemblyTypeName: VNEngine.AlterStatNode, Assembly-CSharp
+        m_MethodName: Run_Node
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4802,10 +4802,10 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1663773803}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1663773805}
+        m_TargetAssemblyTypeName: VNEngine.AlterStatNode, Assembly-CSharp
+        m_MethodName: Run_Node
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
