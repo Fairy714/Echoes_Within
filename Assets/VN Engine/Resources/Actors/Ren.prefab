@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 11486432}
   - component: {fileID: 11430486}
   m_Layer: 5
-  m_Name: You(F)
+  m_Name: Ren
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,7 +112,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 240.99997, y: 0}
-  m_SizeDelta: {x: 389, y: 731}
+  m_SizeDelta: {x: 389, y: 585.5303}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &22291842
 CanvasRenderer:
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 18ac1c88283734279b5480b0750e2bc1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8f9914d82c6d4b248816a4f1709ce758, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59ca6937d41114c4f8d9532b288dcbc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actor_name: Bill
+  actor_name: Ren
   position: 0
   custom_position: {fileID: 0}
   rect: {fileID: 0}

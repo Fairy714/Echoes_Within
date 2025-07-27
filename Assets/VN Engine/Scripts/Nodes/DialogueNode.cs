@@ -57,7 +57,7 @@ namespace VNEngine
             GetLocalizedText(false);
 
             StartCoroutine(Animate_Text(text));
-
+            Debug.Log("actual_actor: " + actual_actor);
             // If the actor field is filled in and the actor is present on the scene
             Actor speaker = ActorManager.Get_Actor(actual_actor);
             if (actual_actor != ""
