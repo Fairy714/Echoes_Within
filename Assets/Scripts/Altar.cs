@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VNEngine;
 
 [CreateAssetMenu(fileName = "Altar", menuName = "VN/Create Altar")]
 public class Altar : ScriptableObject
@@ -9,4 +10,5 @@ public class Altar : ScriptableObject
     public string altar_personality;
     public List<string> altar_weaknesses;
     public List<string> altar_strengths;
+    
 }

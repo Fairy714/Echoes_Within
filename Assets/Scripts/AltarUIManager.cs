@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using VNEngine;
 
 public class AltarUIManager : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class AltarUIManager : MonoBehaviour
     [SerializeField] private TMP_Text personality_;
     [SerializeField] private TMP_Text weaknesses_;
     [SerializeField] private TMP_Text strengths_;
+    [SerializeField] private Button next;
+    
 
 
     public void InitializeAltarUI(Altar altar)
@@ -27,6 +31,20 @@ public class AltarUIManager : MonoBehaviour
         {
             strengths_.text += "- " + strength + "\n";
         }
+        next.onClick.RemoveAllListeners();
+        next.onClick.AddListener(() => altar_obj.SetActive(false));
+
         altar_obj.SetActive(true);
     }
+
+    
+
+    public void SetNextConversation(ConversationManager nextConversation)
+    {
+        next.onClick.RemoveAllListeners();
+        next.onClick.AddListener(nextConversation.Start_Conversation);
+        next.onClick.AddListener(() => altar_obj.SetActive(false));
+
+    }
 }
+
