@@ -7,12 +7,15 @@ using VNEngine;
 
 public class AltarUIManager : MonoBehaviour
 {
+    private const string TRIGGER_SLIDE_IN = "In";
+    private const string TRIGGER_SLIDE_OUT = "Out";
     [SerializeField] private GameObject altar_obj;
     [SerializeField] private TMP_Text name_;
     [SerializeField] private TMP_Text personality_;
     [SerializeField] private TMP_Text weaknesses_;
     [SerializeField] private TMP_Text strengths_;
     [SerializeField] private Button next;
+    [SerializeField] private Animator animator_;
     
 
 
@@ -32,9 +35,10 @@ public class AltarUIManager : MonoBehaviour
             strengths_.text += "- " + strength + "\n";
         }
         next.onClick.RemoveAllListeners();
-        next.onClick.AddListener(() => altar_obj.SetActive(false));
+        next.onClick.AddListener(() => animator_.SetTrigger(TRIGGER_SLIDE_OUT));
 
         altar_obj.SetActive(true);
+        animator_.SetTrigger(TRIGGER_SLIDE_IN);
     }
 
     
@@ -43,7 +47,7 @@ public class AltarUIManager : MonoBehaviour
     {
         next.onClick.RemoveAllListeners();
         next.onClick.AddListener(nextConversation.Start_Conversation);
-        next.onClick.AddListener(() => altar_obj.SetActive(false));
+        next.onClick.AddListener(() => animator_.SetTrigger(TRIGGER_SLIDE_OUT));
 
     }
 }

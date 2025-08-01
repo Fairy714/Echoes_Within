@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &150624
+--- !u!1 &107008
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,52 +8,52 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 22432946}
-  - component: {fileID: 22211946}
-  - component: {fileID: 11480996}
-  - component: {fileID: 11491444}
+  - component: {fileID: 22474258}
+  - component: {fileID: 22247948}
+  - component: {fileID: 11426964}
+  - component: {fileID: 11463866}
   m_Layer: 5
-  m_Name: Claire
+  m_Name: George
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &22432946
+--- !u!224 &22474258
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150624}
+  m_GameObject: {fileID: 107008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 22465092}
+  - {fileID: 22489484}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 240.99997, y: 0}
-  m_SizeDelta: {x: 308, y: 610}
+  m_SizeDelta: {x: 212, y: 395.2284}
   m_Pivot: {x: 0.5, y: 0}
---- !u!222 &22211946
+--- !u!222 &22247948
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150624}
+  m_GameObject: {fileID: 107008}
   m_CullTransparentMesh: 1
---- !u!114 &11480996
+--- !u!114 &11426964
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150624}
+  m_GameObject: {fileID: 107008}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ee696adac8c681748b5649c8a9537b6d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 534160ba4a86d9e4f8525a71d6e6242b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -77,19 +77,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &11491444
+--- !u!114 &11463866
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150624}
+  m_GameObject: {fileID: 107008}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59ca6937d41114c4f8d9532b288dcbc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actor_name: Claire
+  actor_name: George
   position: 1
   custom_position: {fileID: 0}
   rect: {fileID: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   cur_image: {fileID: 0}
   original_scale: {x: 0, y: 0, z: 0}
   is_moving: 0
---- !u!1 &187658
+--- !u!1 &152158
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,9 +107,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 22465092}
-  - component: {fileID: 22211662}
-  - component: {fileID: 11432486}
+  - component: {fileID: 22489484}
+  - component: {fileID: 22215376}
+  - component: {fileID: 11422724}
   m_Layer: 5
   m_Name: FadingImage
   m_TagString: Untagged
@@ -117,40 +117,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!224 &22465092
+--- !u!224 &22489484
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187658}
+  m_GameObject: {fileID: 152158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 22432946}
+  m_Father: {fileID: 22474258}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.0002746582, y: 0.000091552734}
   m_SizeDelta: {x: 1390, y: 2160}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &22211662
+--- !u!222 &22215376
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187658}
+  m_GameObject: {fileID: 152158}
   m_CullTransparentMesh: 1
---- !u!114 &11432486
+--- !u!114 &11422724
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 187658}
+  m_GameObject: {fileID: 152158}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 725e0ff60c2404b4186d345d03106620, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 998a452e6fce7c84187a6f39d414bb94, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
