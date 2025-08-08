@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: Sketch (Recorder)
   m_EditorClassIdentifier: 
   altar_name: Sketch
-  altar_personality: 
-  altar_weaknesses: []
-  altar_strengths: []
+  altar_personality: INFP
+  altar_weaknesses:
+  - "Overwhelmed by Reality \u2013 Struggles with raw, unfiltered emotions."
+  - " Detached Observer \u2013 May intellectualize feelings instead of feeling them. "
+  - " Isolation \u2013 Retreats into her mind, making connection harder. "
+  altar_strengths:
+  - "Keen Perception \u2013 Notices patterns, moods, and hidden meanings. "
+  - "Emotional Archivist \u2013 Safeguards memories the host can\u2019t bear to hold. "
+  - "Creative Coping \u2013 Turns pain into something tangible (art, stories).  "
