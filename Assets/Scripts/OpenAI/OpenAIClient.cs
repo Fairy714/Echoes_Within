@@ -6,8 +6,39 @@ using Newtonsoft.Json;
 
 public class OpenAIClient : MonoBehaviour
 {
+    [SerializeField] private ChatUI chatUI;
     private const string API_URL = "https://api.openai.com/v1/chat/completions";
-    [SerializeField] private string apiKey = "your-api-key-here";
+    private string apiKey;
+
+    void Awake()
+    {
+        LoadAPIKey();
+    }
+
+    private void LoadAPIKey()
+    {
+        // Try environment variable first (for development)
+        apiKey = System.Environment.GetEnvironmentVariable("OPENAI_API_KEY");
+
+        // Fallback to resources file (for builds)
+        if (string.IsNullOrEmpty(apiKey))
+        {
+            TextAsset keyFile = Resources.Load<TextAsset>("apikey");
+            if (keyFile != null)
+            {
+                apiKey = keyFile.text.Trim();
+            }
+        }
+
+        if (string.IsNullOrEmpty(apiKey))
+        {
+            Debug.LogError("No OpenAI API key found! Add to environment variable or Resources/apikey.txt");
+        }
+        else
+        {
+            Debug.Log("API key loaded successfully!");
+        }
+    }
 
     [System.Serializable]
     public class ChatMessage
@@ -74,6 +105,7 @@ public class OpenAIClient : MonoBehaviour
 
                 // Handle the response in your game
                 OnAIResponseReceived(aiReply);
+                chatUI.OnAIResponse(aiReply);
             }
             else
             {
