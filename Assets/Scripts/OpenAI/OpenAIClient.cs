@@ -17,18 +17,9 @@ public class OpenAIClient : MonoBehaviour
 
     private void LoadAPIKey()
     {
-        // Try environment variable first (for development)
-        apiKey = System.Environment.GetEnvironmentVariable("OPENAI_API_KEY");
 
         // Fallback to resources file (for builds)
-        if (string.IsNullOrEmpty(apiKey))
-        {
-            TextAsset keyFile = Resources.Load<TextAsset>("apikey");
-            if (keyFile != null)
-            {
-                apiKey = keyFile.text.Trim();
-            }
-        }
+        apiKey = ObfuscatedAPIKey.GetAPIKey();
 
         if (string.IsNullOrEmpty(apiKey))
         {

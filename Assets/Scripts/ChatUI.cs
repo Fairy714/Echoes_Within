@@ -84,13 +84,10 @@ public class ChatUI : MonoBehaviour
         GameObject prefab = isUser ? userMessagePrefab : aiMessagePrefab;
         GameObject messageObj = Instantiate(prefab, chatContent);
 
+        ChatBubble chatBubble = messageObj.GetComponent<ChatBubble>();
         // Set message text
-        TextMeshProUGUI textComponent = messageObj.GetComponentInChildren<TextMeshProUGUI>();
-        if (textComponent != null)
-        {
-            textComponent.text = text;
-            textComponent.color = isUser ? userMessageColor : aiMessageColor;
-        }
+  
+        chatBubble.SetMessage(text);
 
         // Mark as temporary if needed (for "thinking" messages)
         if (isTemporary)
