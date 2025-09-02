@@ -32,6 +32,7 @@ public class ChatBubble : MonoBehaviour
         textSize.x = Mathf.Min(textSize.x, maxWidth);
         textSize.x = Mathf.Max(textSize.x, minWidth - padding.x);
         textSize.y = Mathf.Max(textSize.y, minHeight - padding.y);
+
        
 
         // Set text rect size
